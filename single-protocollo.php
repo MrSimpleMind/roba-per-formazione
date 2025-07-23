@@ -86,16 +86,7 @@ get_header(); ?>
                     <div class="pdf-embed-container">
                         <?php 
                         // PDF Embedder con parametri specifici per protocolli
-                        echo do_shortcode('[pdf-embedder 
-                            url="' . esc_url($pdf_file) . '" 
-                            download="off" 
-                            toolbar="bottom" 
-                            width="max" 
-                            height="800"
-                            mobilewidth="300"
-                            toolbarfixed="on"
-                            title="' . esc_attr(get_the_title()) . '"
-                        ]'); 
+                        echo do_shortcode('[pdf-embedder url="' . esc_url($pdf_file) . '" download="off" toolbar="bottom" width="max" height="800" mobilewidth="300" toolbarfixed="on" title="' . esc_attr(get_the_title()) . '"]');
                         ?>
                     </div>
                 </section>
