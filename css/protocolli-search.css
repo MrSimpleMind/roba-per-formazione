@@ -1,0 +1,27 @@
+.protocollo-search-container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.protocollo-search-controls{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.protocollo-search-controls input,
+.protocollo-search-controls select{
+  padding: 8px;
+  font-size: 14px;
+}
+.protocollo-list{
+  list-style: none;
+  padding: 0;
+}
+.protocollo-list li{
+  margin-bottom: 8px;
+}
+.protocollo-list a{
+  text-decoration: none;
+  color: #ab1120;
+}
