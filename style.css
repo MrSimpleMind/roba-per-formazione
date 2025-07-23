@@ -1,0 +1,37 @@
+/*
+Theme Name: Divi Child - La Meridiana
+Description: Child theme per la piattaforma formazione La Meridiana
+Author: La Meridiana
+Template: Divi
+Version: 1.0.0
+*/
+
+/* Import del CSS del tema padre */
+@import url("../Divi/style.css");
+
+/* ========================================
+   PERSONALIZZAZIONI CHILD THEME
+   ======================================== */
+
+/* 
+   Le tue personalizzazioni CSS vanno qui sotto.
+   Questo file non verrà sovrascritto quando aggiorni Divi.
+*/
+
+/* Esempio: Nascondere elementi non necessari per performance */
+.et_pb_comments_module {
+    display: none !important;
+}
+
+/* Ottimizzazioni per la piattaforma formazione */
+body {
+    /* Miglioramento rendering font */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Nascondere elementi non necessari per un'intranet aziendale */
+.et_pb_social_media_follow,
+.et_pb_blog_pagination {
+    /* Questi possono essere nascosti se non servono */
+}
