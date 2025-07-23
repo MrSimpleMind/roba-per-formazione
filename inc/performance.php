@@ -208,18 +208,10 @@ add_action('wp', 'meridiana_optimize_divi_for_documents');
    ======================================== */
 
 /**
- * Carica il font delle icone Divi e Font Awesome
+ * Carica Font Awesome (ETMODULES Divi rimosso per evitare 404)
  */
 function meridiana_load_icon_fonts() {
-    // Font icone Divi
-    wp_enqueue_style(
-        'divi-fonts', 
-        get_template_directory_uri() . '/core/admin/fonts/modules.css',
-        array(),
-        wp_get_theme()->parent()->get('Version')
-    );
-    
-    // Font Awesome come fallback
+    // Font Awesome come font icone principale
     wp_enqueue_style(
         'font-awesome', 
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
@@ -231,13 +223,6 @@ add_action('wp_enqueue_scripts', 'meridiana_load_icon_fonts', 5);
 
 // Carica font icone anche nell'admin
 function meridiana_load_icon_fonts_admin() {
-    wp_enqueue_style(
-        'divi-fonts-admin', 
-        get_template_directory_uri() . '/core/admin/fonts/modules.css',
-        array(),
-        wp_get_theme()->parent()->get('Version')
-    );
-    
     wp_enqueue_style(
         'font-awesome-admin', 
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
