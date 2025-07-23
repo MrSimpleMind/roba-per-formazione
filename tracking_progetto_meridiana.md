@@ -318,10 +318,6 @@ meridiana_cleanup_database()        // Per pulizia periodica
 'link_del_pulsante_call_to_action'    // Campo URL ✅
 ```
 
-### **Shortcode Disponibili**
-```
-[frontend_admin group=684a4a29a61cf edit=false]  // Moduli frontend ✅
-```
 
 ### **Template Files Implementati**
 ```
